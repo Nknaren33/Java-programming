@@ -1,0 +1,25 @@
+package nknaren;
+
+import java.util.Scanner;
+
+public class SumOfNaturalNum 
+{
+	public static void main(String args [])
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("please enter the first number:");
+		int num1=scan.nextInt();
+		
+		System.out.println("please enter the last number:");
+		int num2=scan.nextInt();
+		scan.close();
+		
+		
+		int sum=0;
+		for (int i=num1; i<=num2;i++)
+		{
+			sum +=i;
+		}
+		System.out.println("sum of given natural numbeers:"+sum);
+	}
+}
