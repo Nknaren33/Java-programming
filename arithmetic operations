@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ARITHMETIC {
+
+	public static void main (String []args)
+	{
+		Scanner scan =new Scanner(System.in);
+		System.out.println("ENTER UR FIRST NUMBER:");
+		int num1 = scan.nextInt();
+		System.out.println("ENTER UR SECOND NUMBER");
+		int num2 = scan.nextInt();
+		scan.close();
+		
+		int add,sub,mult,div;
+		
+		add= num1+num2;
+		sub= num1-num2;
+		mult=num1*num2;
+		div=num1/num2;
+		
+		System.out.println("addition of numbers :"+add);
+		System.out.println("subraction of numbers:"+sub);
+		System.out.println("multiplication of numbers:"+mult);
+		System.out.println("division of two numbers:"+div);
+		
+	}
+}
