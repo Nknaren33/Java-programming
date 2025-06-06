@@ -1,0 +1,25 @@
+package nknaren;
+
+import java.util.*;
+
+class Circle
+{
+	public static void main (String []args)
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.print("enter the radius of a circle:");
+		double rad=scan.nextInt();
+		scan.close();
+		
+		double perimeter,area;
+		
+		perimeter=2 * 3.14 *rad;
+		area= 3.14 * rad *rad;
+		
+		System.out.println("perimeter of a cicrcle :"+perimeter);
+		System.out.println("area of a circle :"+area);
+		
+		
+		
+	}
+}
