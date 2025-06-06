@@ -1,0 +1,55 @@
+package nknaren;
+
+import java.util.*;
+public class stdmark 
+{
+	public static void main (String args [])
+	{
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter ur Name :");
+		String name=scan.nextLine();
+		
+		System.out.print("Enter ur reg no :");
+		long reg = scan.nextLong();
+		
+		System.out.println("please enter ur marks:");
+		
+		System.out.print("mark 1:");
+		int m1=scan.nextInt();
+		
+		System.out.print("mark 2:");
+		int m2=scan.nextInt();
+		
+		System.out.print("mark 3:");
+		int m3=scan.nextInt();
+		
+		System.out.print("mark 4:");
+		int m4=scan.nextInt();
+		
+		System.out.print("mark 5:");
+		int m5=scan.nextInt();
+		scan.close();
+		
+		int total,avg;
+		
+		System.out.println("your name is :"+name);
+		
+		System.out.println("your register number is:"+reg);
+		
+		total = m1+m2+m3+m4+m5;
+		System.out.println("total marks : "+total);
+		
+		avg=total/5;
+		System.out.println("ur percentage:"+avg+"%");
+		
+		if(avg>60)
+		{
+			System.out.println("you are good in  studies");
+		}
+		else
+			System.out.println("you have to put hardwork on studies!!!");
+			
+		
+	}
+}
