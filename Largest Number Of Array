@@ -1,0 +1,44 @@
+import java .util.Scanner;
+
+public class LargestNumArray 
+{
+	public static void main (String args[])
+	{
+		Scanner obj = new Scanner (System.in);
+		System.out.println("please enter the size of an array: ");
+		int size = obj.nextInt();
+		
+		System.out.println("please enter the elements to store in array");
+		int arr[] = new int [size];
+		
+		for (int i=0;i<size ;i++ )
+		{
+			arr[i]=obj.nextInt();
+		}
+		
+		System.out.println("Displaying the array elements:");
+		
+		for(int i=0 ; i<size;i++)
+		{
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+		int large = arr[0];
+		
+		for(int i=1;i<size;i++)
+		{
+			if (arr[i]>large)
+			{
+				large = arr[i];
+				
+			}
+		}
+		System.out.println("the largest number in given array:");
+		System.out.println(large);
+		obj.close();
+		
+		
+		
+	}
+
+}
