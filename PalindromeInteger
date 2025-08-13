@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class PalindromeInteger 
+{
+	public static void main(String arg[])
+	{
+		Scanner scan = new Scanner (System.in);
+		int num = scan.nextInt();//123
+		scan.close();
+		
+		int rev=0;
+		int dummy;
+		int orginal = num;
+		
+		while (num!=0)
+		{
+			dummy=num%10;
+			rev = rev*0+dummy;
+			num=num/10;
+		}
+		System.out.println(rev);
+		
+		if(orginal ==rev)
+		{
+			System.out.println("the given number is palindrome");
+		}
+		else
+			System.out.println("the given number is not a palindrome");
+	}
+
+}
